@@ -1,0 +1,14 @@
+[project]
+name = "roadguard-ai"
+version = "1.0.0"
+description = "Intelligent Road Damage Detection, Assessment & Monitoring System"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "backend"]
+testpaths = ["tests", "backend/tests"]
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning",
+]

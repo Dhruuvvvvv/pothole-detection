@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Environment & Secrets (NEVER commit credentials)
+.env
+.env.local
+.env.*.local
+kaggle.json
+*.pem
+*.key
+
+# Datasets, Checkpoints & Runtime Outputs
+data/
+datasets/
+raw_data/
+extracted/
+models/*.pt
+models/*.onnx
+models/*.engine
+!models/.gitkeep
+outputs/uploads/*
+outputs/annotated/*
+outputs/processed/*
+outputs/videos/*
+outputs/experiments/*
+!outputs/experiments/rdd2022_baseline/
+outputs/experiments/rdd2022_baseline/*
+!outputs/experiments/rdd2022_baseline/results.csv
+!outputs/experiments/rdd2022_baseline/results.png
+outputs/dataset/*
+!outputs/**/.gitkeep
+reports/*.pdf
+reports/*.csv
+!reports/.gitkeep
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.ipynb_checkpoints/
